@@ -28,6 +28,7 @@ class StoreProjectRequest extends FormRequest
             'tech' => 'required|max:100',
             'github_url' => 'nullable|max:300',
             'devices' => 'nullable|max:100',
+            'type_id' => 'nullable|exists:types,id'
         ];
     }
 
@@ -48,6 +49,8 @@ class StoreProjectRequest extends FormRequest
             'github_url.max' => 'Deve avere un massimo di :max caratteri',
 
             'devices.max' => 'Deve avere un massimo di :max caratteri',
+
+
 
         ];
     }

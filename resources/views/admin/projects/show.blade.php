@@ -16,7 +16,7 @@
     <div class="row justify-content-center py-5">
         <div class="col-6">
             <strong>Tipologia:</strong>
-            <p class="pt-1 ps-4">{{$project->type->title}}</p>
+            <p class="pt-1 ps-4">{{$project->type?->title}}</p>
             <strong >Tecnologie utilizzate:</strong>
             <p class="pt-1 ps-4">{{$project->tech}}</p>
             <strong >Visualizzazione ottimale per:</strong>
