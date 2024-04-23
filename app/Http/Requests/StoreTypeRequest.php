@@ -23,7 +23,7 @@ class StoreTypeRequest extends FormRequest
     {
         return [
             'title' => 'required|max:100',
-            'dfescription' => 'nullable|max:500',
+            'description' => 'nullable|max:500',
 
         ];
     }
