@@ -13,4 +13,9 @@ class Project extends Model
     use SoftDeletes;
 
     protected $fillable = ['title', 'description', 'tech', 'github_url', 'devices'];
+
+    public function type()
+    {
+        return $this->belongsTo(Type::class);
+    }
 }
