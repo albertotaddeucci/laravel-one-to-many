@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container py-5">
-    <h1>Tipi di progetti</h1>
+    <h1>Tipologie di progetti</h1>
     <ul class="pt-4 list-group list-group-flush">
         @foreach ($types as $type)  
         <li class="list-group-item list-group-item-action">

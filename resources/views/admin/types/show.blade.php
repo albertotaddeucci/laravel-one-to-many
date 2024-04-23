@@ -16,16 +16,16 @@
     <div class="row justify-content-center py-5">
         <div class="col-6">
                                  
-            <strong >Descrizione del progetto:</strong>
+            <strong >Descrizione:</strong>
             <p class="pt-1 ps-4">{{$type->description}}</p>
             
         </div>
         <div class="col-6 text-center">
             
             <a href="{{route('admin.types.edit', $type->id)}}" class="btn btn-warning me-3">Modifica</a>
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            {{-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Elimina
-            </button>
+            </button> --}}
 
         </div>
     </div>
